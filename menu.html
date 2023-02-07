@@ -56,24 +56,36 @@
     </header>
     <!-- End header -->
 
-    <!-- Begin Background page home -->
+    <!-- Begin Backgroun page home -->
     <section>
-        <div class="bg-cover bg-center h-screen backdrop-blur" style="background-image: url('./assets/img/slider-bg-coffe-1.jpg')">
-                <div class="flex justify-center items-center h-screen text-center">
+        <div class="flex justify-center bg-cover bg-center bg-no-repeat h-96" style="background-image: url('./assets/img/menu-bg.jpg')">
+                <div class="flex items-center text-center">
                     <div class="max-w-screen-md">
-                        <h2 class="mb-4 text-7xl tracking-tight font-extrabold text-gray-900 dark:text-white">COFFEE SHOPEE</h2>
-                        <p class="mb-8 font-light text-gray-300 sm:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex placeat perferendis quibusdam quis, autem fugit aspernatur enim provident dolorem a fugiat debitis alias similique totam, eligendi accusamus nisi corporis amet?.</p>
-                        <div class="flex justify-center flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                            <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg dark:text-slite-900 btn-bg">
-                                <ion-icon name="grid-outline" class="mr-2"></ion-icon>
-                                Show Menu
-                            </a>  
-                        </div>
+                        <h2 class="mb-4 text-7xl tracking-tight font-extrabold text-gray-900 dark:text-white">MENU</h2>
+                        <p class="mb-8 font-light text-gray-300 sm:text-xl">Pure natural food.</p>
                     </div>
                 </div>
         </div>
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex justify-center flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="all-tab" data-tabs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="drinks-tab" data-tabs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false">Drinks</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="myTabContent">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+            </div>
     </section>
-    <!-- End Background page home -->
+    <!-- End Backgroun page home -->
 
     <!-- Begin footer -->
     <footer class="p-4 md:p-8 lg:p-10 coffee-bg">
